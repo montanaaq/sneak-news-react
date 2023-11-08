@@ -106,7 +106,6 @@ const Form = () => {
         <option value="clothes">Одежда</option>
         <option value="acces">Аксессуары</option>
       </select>
-      <button onClick={onSendData}>Отправить</button>
     </div>
   );
 };
