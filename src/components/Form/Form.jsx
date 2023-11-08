@@ -18,7 +18,7 @@ const Form = () => {
       url,
       subject
     };
-    tg.initData(JSON.stringify(data));
+    tg.sendData(JSON.stringify(data));
     // setUsername('');
     // setCity('');
     // setSize('');
