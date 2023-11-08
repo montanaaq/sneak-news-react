@@ -7,7 +7,7 @@ const Form = () => {
   const [city, setCity] = useState('');
   const [size, setSize] = useState('');
   const [url, setUrl] = useState('');
-  const [subject, setSubject] = useState('shoes');
+  const [subject, setSubject] = useState('Обувь');
   const { tg } = useTelegram();
 
   const onSendData = useCallback(() => {
@@ -19,11 +19,6 @@ const Form = () => {
       subject
     };
     tg.sendData(JSON.stringify(data));
-    // setUsername('');
-    // setCity('');
-    // setSize('');
-    // setUrl('');
-    // setSubject('shoes');
 }, [username, city, size, url, subject]);
 
   useEffect(() => {
@@ -102,9 +97,9 @@ const Form = () => {
         onChange={onChangeUrl}
       />
       <select value={subject} onChange={onChangeSubject} className="select">
-        <option value="shoes">Обувь</option>
-        <option value="clothes">Одежда</option>
-        <option value="acces">Аксессуары</option>
+        <option value="Обувь">Обувь</option>
+        <option value="Одежда">Одежда</option>
+        <option value="Аксессуары">Аксессуары</option>
       </select>
     </div>
   );
