@@ -18,7 +18,7 @@ const Form = () => {
       url,
       subject
     };
-    tg.initData(JSON.stringify(data));
+    tg.initData();
 }, [username, city, size, url, subject]);
 
   useEffect(() => {
